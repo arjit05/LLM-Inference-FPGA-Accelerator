@@ -69,18 +69,28 @@ llm_fpga_accelerator/
 ## Prerequisites
 
 - **Verilator**: SystemVerilog simulator
-  ```bash
-  brew install verilator  # macOS
-  # or for Linux/other systems, follow Verilator installation guide
+
+ **Windows (Recommended: WSL)**
+ ```bash
+  # Install WSL (run in PowerShell as Administrator)
+  wsl --install
+
+  # After restart, open Ubuntu and install:
+  sudo apt update
+  sudo apt install -y build-essential verilator
   ```
 
 - **C++17 or later**: For compilation
 - **GTKWave** (optional): For waveform visualization
   ```bash
-  brew install gtkwave  # macOS
+  # WSL / Linux
+  sudo apt install gtkwave
   ```
-
 - **Make**: Build automation tool
+  ```bash
+  # WSL / Linux
+  sudo apt install make
+  ```
 
 ## Building and Running
 
